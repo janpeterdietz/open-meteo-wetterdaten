@@ -2,8 +2,8 @@
     "elements": [   
         { "type": "CheckBox","name": "Active", "caption": "Active"},
 
-        { "type": "NumberSpinner","name": "Latitude", "caption": "Latitude (N)", "digits": 16, "suffix": "°", "width": "120px"},
-        { "type": "NumberSpinner","name": "Longitude", "caption": "Longitude (E)", "digits": 16, "suffix": "°", "width": "120px"}
+        { "type": "NumberSpinner","name": "Latitude", "caption": "Latitude (N)", "digits": 16, "suffix": "°", "width": "200px"},
+        { "type": "NumberSpinner","name": "Longitude", "caption": "Longitude (E)", "digits": 16, "suffix": "°", "width": "200px"}
     ],
     "actions": [],
     "status": []
