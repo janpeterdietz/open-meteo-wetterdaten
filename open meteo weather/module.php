@@ -21,7 +21,7 @@ declare(strict_types=1);
 
 			$this->RegisterVariableString ("current_weahter_code", $this->Translate("Weather status"),  $omw_weather_code, 10) ;
 			
-			#$omw_Temperature= [	'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+			$omw_Temperature= [	'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
 								'ICON' => 'Temperature',						
 								'DIGITS' => 1,	
    								'SUFFIX' => ' °C'];
