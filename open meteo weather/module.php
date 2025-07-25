@@ -266,10 +266,9 @@ declare(strict_types=1);
 
 			$weahter_code = $raw_data_array['current']['weather_code'];
 
-			IPS_SetIcon($id_weahter_code, $weather_code_icon[$weahter_code]);
-
 			$this->SetValue("current_weahter_code", $weather_code_de[$weahter_code]);
-				//IPS_SetIcon($id_weahter_code, $weather_code_icon[$weahter_code]);
+			$id_weahter_code = IPS_GetObjectIDByIdent('current_weahter_code', $this->InstanceID);
+			IPS_SetIcon($id_weahter_code, $weather_code_icon[$weahter_code]);
 			
 
 			$this->SetValue("current_Temperature", $raw_data_array['current']['temperature_2m']);
