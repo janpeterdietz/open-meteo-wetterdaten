@@ -96,7 +96,7 @@ declare(strict_types=1);
 
 			if ($this->ReadPropertyBoolean('Active')) 
 			{
-                $this->SetTimerInterval('UpdateData', $this->ReadPropertyInteger('UpdateInterval') * 60 * 1000);
+                $this->SetTimerInterval('UpdateData', 15 * 60 * 1000);
                 $this->SetStatus(102);
             } 
 			else 
