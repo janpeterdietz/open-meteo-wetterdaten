@@ -17,10 +17,11 @@ declare(strict_types=1);
 		
 			$this->RegisterAttributeString("raw_data", "");
 
+			$omw_weather_code = [ 'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION ];
 
-
-			$this->RegisterVariableString ("current_weahter_code", $this->Translate("Weather status"),  "", 10) ;
-			$omw_Temperature= [	'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+			$this->RegisterVariableString ("current_weahter_code", $this->Translate("Weather status"),  $omw_weather_code, 10) ;
+			
+			#$omw_Temperature= [	'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
 								'ICON' => 'Temperature',						
 								'DIGITS' => 1,	
    								'SUFFIX' => ' °C'];
@@ -264,6 +265,9 @@ declare(strict_types=1);
 
 
 			$weahter_code = $raw_data_array['current']['weather_code'];
+
+			IPS_SetIcon($id_weahter_code, $weather_code_icon[$weahter_code]);
+
 			$this->SetValue("current_weahter_code", $weather_code_de[$weahter_code]);
 				//IPS_SetIcon($id_weahter_code, $weather_code_icon[$weahter_code]);
 			
