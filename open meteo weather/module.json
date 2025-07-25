@@ -1,0 +1,12 @@
+{
+    "id": "{B42BF048-F548-07D3-C2B6-83DF1A8D7401}",
+    "name": "open meteo weather",
+    "type": 3,
+    "vendor": "open-meteo",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "OMW",
+    "url": "https://open-meteo.com/"
+}

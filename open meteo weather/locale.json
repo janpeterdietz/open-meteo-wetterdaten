@@ -1,0 +1,35 @@
+{
+   
+    "translations": {
+        "de": {
+            "Active": "Aktiv",
+            "UpdateInterval": "UpdateInterval",
+
+            "minutes": "Minuten",
+
+            "Longitude" : "Längengrad",
+            "Latitude": "Breitengrad",
+
+
+            "Latitude (N)" : "Längengrad (N)",
+            "Longitude (E)" : "Breitengrad (O)",
+            
+
+            "Weather status": "Wetter Status",
+            "Temperature": "Temperatur",
+
+            "Temperature Max" : "Maximale Temperatur",
+            "Temperature Min" : "Minimale Temperatur",
+            
+            "Humidity": "Luftfeuchtigkeit",
+            "Dewpoint": "Taupunkt",
+            "Windspeed": "Windsgeschwindigkeit",
+
+            "Windspeed Max": "Maximale Windsgeschwindigkeit",
+            "Wind guest Max": "Böen Max",
+
+            "precipitation": "Niederschlagsmenge"
+        }
+    }
+
+}

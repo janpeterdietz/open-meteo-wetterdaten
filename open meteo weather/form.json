@@ -1,0 +1,13 @@
+{
+    "elements": [   
+        { "type": "CheckBox","name": "Active", "caption": "Active"},
+
+        { "type": "NumberSpinner","name": "Latitude", "caption": "Latitude (N)", "digits": 8, "suffix": "°", "width": "120px"},
+        { "type": "NumberSpinner","name": "Longitude", "caption": "Longitude (E)", "digits": 8, "suffix": "°", "width": "120px"},
+
+
+        { "type": "NumberSpinner", "name": "UpdateInterval", "caption": "UpdateInterval", "suffix": "minutes"}
+    ],
+    "actions": [],
+    "status": []
+}

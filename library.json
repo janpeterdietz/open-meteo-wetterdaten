@@ -1,0 +1,12 @@
+{
+    "id": "{18249F63-9554-E5C4-F90B-FACC79CC0610}",
+    "name": "open meteo wetterdaten",
+    "author": "Jan Peter Dietz",
+    "url": "",
+    "compatibility": {
+        "version": "7.1"
+    },
+    "version": "1.0",
+    "build": 0,
+    "date": 0
+}
