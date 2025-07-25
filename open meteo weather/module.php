@@ -13,9 +13,7 @@ declare(strict_types=1);
 			$this->RegisterPropertyFloat('Latitude', 54.39594725660512);
 			$this->RegisterPropertyFloat('Longitude', 10.122319471279694);
 
-			$this->RegisterPropertyInteger('UpdateInterval', 15);
-
-			$this->RegisterTimer("UpdateData", $this->ReadPropertyInteger("UpdateInterval")* 60 * 1000, 'OMW_update_data(' . $this->InstanceID . ');');
+			$this->RegisterTimer("UpdateData", 15 * 60 * 1000, 'OMW_update_data(' . $this->InstanceID . ');');
 		
 			$this->RegisterAttributeString("raw_data", "");
 
@@ -61,7 +59,15 @@ declare(strict_types=1);
 		
 			$this->RegisterVariableFloat ("daily_Temperature_Min", $this->Translate("Temperature Min"),  $omw_Temperature, 22) ;
 			$this->RegisterVariableFloat ("daily_Temperature_Max", $this->Translate("Temperature Max"),  $omw_Temperature, 24) ;
-		
+			
+			$omw_wind_speed = [	'PRESENTATION' => VARIABLE_PRESENTATION_VALUE_PRESENTATION,
+								'ICON' => 'wind',						
+								'DIGITS' => 2,	
+								'INTERVALS_ACTIVE' => false,
+								'INTERVALS' => $intervals,
+								'MAX' => 100,
+            					'MIN' => 0,
+   								'SUFFIX' => ' km/h'];
 
 		
 			$this->RegisterVariableFloat ("daily_wind_max", $this->Translate("Windspeed Max"),  $omw_wind_speed, 52) ;
